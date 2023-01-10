@@ -21,7 +21,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
+			<div class="header-container container">
 				<nav class="main-nav">
 					<a href="./index.html" class="logo">web<span class="studio">studio</span></a>
 
@@ -35,6 +35,58 @@
 					<li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
 					<li class="item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
 				</ul>
+				<button class="menu-hamburger-button js-open-menu" type="button">
+					<svg class="menu-hamburger-icon" width="32" height="22">
+						<use href="./images/symbol-defs.svg#icon-hamburger-menu"></use>
+					</svg>
+				</button>
+
+				<div class="mobile-menu-container js-menu-container">
+					<ul class="mobile-site-nav list">
+						<li class="item"><a href="./index.html" class="link current">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+						<li class="item"><a href="#" class="link">Contacts</a></li>
+					</ul>
+					<ul class="mobile-auth-nav list">
+						<li class="item"><a href="tel:+110001111111" class="tel link">+11 (000) 111-11-11</a></li>
+						<li class="item"><a href="mailto:info@devstudio.com" class="email link">info@devstudio.com</a></li>
+					</ul>
+					<ul class="mobile-menu-cocial-list list">
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<button type="button" class="mobile-menu-close-button js-close-menu">
+						<svg class="modal-close-btn-icon" width="8" height="8">
+							<use href="./images/symbol-defs.svg#close"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</header>
 
@@ -104,13 +156,25 @@
 					<h2 class="section-title">what are we doing</h2>
 					<ul class="work-list list">
 						<li class="item">
-							<img src="./images/web.jpg" alt="Web development" width="360" />
+							<picture>
+								<source srcset="./images/web.webp 1x, ./images/web@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/web.jpg 1x, ./images/web@2x.jpg 2x" type="image/jpg" />
+								<img src="./images/web.jpg" alt="Web development" width="360" />
+							</picture>
 						</li>
 						<li class="item">
-							<img src="./images/applications.jpg" alt="Mobile application development" width="360" />
+							<picture>
+								<source srcset="./images/applications.webp 1x, ./images/applications@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/applications.jpg 1x, ./images/applications@2x.jpg 2x" type="image/jpg" />
+								<img src="./images/applications.jpg" alt="Mobile application development" width="360" />
+							</picture>
 						</li>
 						<li class="item">
-							<img src="./images/mobile.jpg" alt="Mobile phone adaptation" width="360" />
+							<picture>
+								<source srcset="./images/mobile.webp 1x, ./images/mobile@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg 2x" type="image/jpg" />
+								<img src="./images/mobile.jpg" alt="Mobile phone adaptation" width="360" />
+							</picture>
 						</li>
 					</ul>
 				</div>
@@ -121,7 +185,17 @@
 					<h2 class="section-title">our team</h2>
 					<ul class="team-list list">
 						<li class="item">
-							<img src="./images/product_designer.jpg" alt="Product Designer" width="264" />
+							<picture>
+								<source
+									srcset="./images/product_designer.webp 1x, ./images/product_designer@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/product_designer.jpg 1x, ./images/product_designer@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img src="./images/product_designer.jpg" alt="Product Designer" width="264" />
+							</picture>
 							<div class="card">
 								<h3 class="title">Mark Guerrero</h3>
 								<p class="text">Product Designer</p>
@@ -158,7 +232,17 @@
 							</div>
 						</li>
 						<li class="item">
-							<img src="./images/frontend_developer.jpg" alt="Frontend Developer" width="264" />
+							<picture>
+								<source
+									srcset="./images/frontend_developer.webp 1x, ./images/frontend_developer@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/frontend_developer.jpg 1x, ./images/frontend_developer@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img src="./images/frontend_developer.jpg" alt="Frontend Developer" width="264" />
+							</picture>
 							<div class="card">
 								<h3 class="title">Tom Ford</h3>
 								<p class="text">Frontend Developer</p>
@@ -195,7 +279,11 @@
 							</div>
 						</li>
 						<li class="item">
-							<img src="./images/marketing.jpg" alt="Marketer" width="264" />
+							<picture>
+								<source srcset="./images/marketing.webp 1x, ./images/marketing@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x" type="image/jpg" />
+								<img src="./images/marketing.jpg" alt="Marketer" width="264" />
+							</picture>
 							<div class="card">
 								<h3 class="title">Camila Garcia</h3>
 								<p class="text">Marketing</p>
@@ -232,7 +320,11 @@
 							</div>
 						</li>
 						<li class="item">
-							<img src="./images//ui_designer.jpg" alt="User Interface Designer" width="264" />
+							<picture>
+								<source srcset="./images/ui_designer.webp 1x, ./images/ui_designer@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/ui_designer.jpg 1x, ./images/mui_designer2x.jpg 2x" type="image/jpg" />
+								<img src="./images/ui_designer.jpg" alt="User Interface Designer" width="264" />
+							</picture>
 							<div class="card">
 								<h3 class="title">Daniel Wilson</h3>
 								<p class="text">UI Designer</p>
@@ -326,7 +418,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-main">
-					<a href="./index.html" class="logo">web<span class="studio-footer">studio</span></a>
+					<a href="./index.html" class="logo">web<span class="studio-logo-footer">studio</span></a>
 					<p class="text"
 						>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p
 					>
@@ -465,5 +557,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
