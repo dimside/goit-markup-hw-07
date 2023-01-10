@@ -496,6 +496,7 @@ img {
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
+		transform-origin: top right;
 		scale: 0;
 
 		width: 100%;
@@ -508,7 +509,8 @@ img {
 		background: #ffffff;
 		box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
 			0px 1px 6px rgba(46, 47, 66, 0.08);
-		transition: opacity 250ms linear, scale 250ms linear;
+		transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), scale 350ms cubic-bezier(0.4, 0, 0.2, 1),
+			visibility 350ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	.mobile-menu-container.js-menu-container.is-open {
