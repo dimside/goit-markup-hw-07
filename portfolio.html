@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
+			<div class="header-container container">
 				<nav class="main-nav">
 					<a href="./index.html" class="logo">web<span class="studio">studio</span></a>
 
@@ -33,6 +33,58 @@
 					<li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
 					<li class="item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
 				</ul>
+				<button class="menu-hamburger-button js-open-menu" type="button">
+					<svg class="menu-hamburger-icon" width="32" height="22">
+						<use href="./images/symbol-defs.svg#icon-hamburger-menu"></use>
+					</svg>
+				</button>
+
+				<div class="mobile-menu-container js-menu-container">
+					<ul class="mobile-site-nav list">
+						<li class="item"><a href="./index.html" class="link current">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+						<li class="item"><a href="#" class="link">Contacts</a></li>
+					</ul>
+					<ul class="mobile-auth-nav list">
+						<li class="item"><a href="tel:+110001111111" class="tel link">+11 (000) 111-11-11</a></li>
+						<li class="item"><a href="mailto:info@devstudio.com" class="email link">info@devstudio.com</a></li>
+					</ul>
+					<ul class="mobile-menu-cocial-list list">
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="mobile-menu-social-list-item">
+							<a href="#" class="mobile-menu-social-list-link link">
+								<svg class="mobile-menu_social-link_item-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<button type="button" class="mobile-menu-close-button js-close-menu">
+						<svg class="modal-close-btn-icon" width="8" height="8">
+							<use href="./images/symbol-defs.svg#close"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</header>
 
@@ -54,12 +106,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img
-										src="./images/banking-app.jpg"
-										alt="images with banking app interface"
-										width="360"
-										height="300"
-									/>
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/banking-app-desc.webp 1x, ./images/banking-app-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/banking-app-desc.jpg 1x, ./images/banking-app-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/banking-app-mobile.webp 1x, ./images/banking-app-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/banking-app-mobile.jpg 1x, ./images/banking-app-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/banking-app-mobile.jpg" alt="images with banking app interface" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -75,12 +145,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img
-										src="./images/cashless-payment.jpg"
-										alt="mobile phone scans the qr code"
-										width="360"
-										height="300"
-									/>
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/cashless-payment-desc.webp 1x, ./images/cashless-payment-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/cashless-payment-desc.jpg 1x, ./images/cashless-payment-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/cashless-payment-mobile.webp 1x, ./images/cashless-payment-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/cashless-payment-mobile.jpg 1x, ./images/cashless-payment-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/cashless-payment-mobile.jpg" alt="mobile phone scans the qr code" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -95,7 +183,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img src="./images/meditation-app.jpg" alt="laptop with cell phone" width="360" height="300" />
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/meditation-app-desc.webp 1x, ./images/meditation-app-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/meditation-app-desc.jpg 1x, ./images/meditation-app-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/meditation-app-mobile.webp 1x, ./images/meditation-app-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/meditation-app-mobile.jpg 1x, ./images/meditation-app-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/meditation-app-mobile.jpg" alt="laptop with cell phone" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -110,7 +221,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img src="./images/taxi-service.jpg" alt="steering wheel" width="360" height="300" />
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/taxi-service-desc.webp 1x, ./images/taxi-service-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/taxi-service-desc.jpg 1x, ./images/taxi-service-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/taxi-service-mobile.webp 1x, ./images/taxi-service-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/taxi-service-mobile.jpg 1x, ./images/taxi-service-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/taxi-service-mobile.jpg" alt="steering wheel" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -125,12 +259,36 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img
-										src="./images/screen-illustrations.jpg"
-										alt="mobile phone screen Illustrations"
-										width="360"
-										height="300"
-									/>
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/screen-illustrations-desc.webp 1x, ./images/screen-illustrations-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/screen-illustrations-desc.jpg 1x, ./images/screen-illustrations-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="
+												./images/screen-illustrations-mobile.webp    1x,
+												./images/screen-illustrations-mobile@2x.webp 2x
+											"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="
+												./images/screen-illustrations-mobile.jpg    1x,
+												./images/screen-illustrations-mobile@2x.jpg 2x
+											"
+											type="image/jpg"
+										/>
+										<img src="./images/screen-illustrations-mobile.jpg" alt="mobile phone screen Illustrations" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -145,12 +303,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img
-										src="./images/online-courses.jpg"
-										alt="smiling girl with mobile phone"
-										width="360"
-										height="300"
-									/>
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/online-courses-desc.webp 1x, ./images/online-courses-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/online-courses-desc.jpg 1x, ./images/online-courses-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/online-courses-mobile.webp 1x, ./images/online-courses-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/online-courses-mobile.jpg 1x, ./images/online-courses-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/online-courses-mobile.jpg" alt="smiling girl with mobile phone" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -165,12 +341,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img
-										src="./images/instagram-stories-concept.jpg"
-										alt="images of instagram stories concepts"
-										width="360"
-										height="300"
-									/>
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/instagram-stories-desc.webp 1x, ./images/instagram-stories-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/instagram-stories-desc.jpg 1x, ./images/instagram-stories-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/instagram-stories-mobile.webp 1x, ./images/instagram-stories-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/instagram-stories-mobile.jpg 1x, ./images/instagram-stories-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/instagram-stories-mobile.jpg" alt="images of instagram stories concepts" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -185,7 +379,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img src="./images/organic-food.jpg" alt="girl with organic food" width="360" height="300" />
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/organic-food-desc.webp 1x, ./images/organic-food-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/organic-food-desc.jpg 1x, ./images/organic-food-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/organic-food-mobile.webp 1x, ./images/organic-food-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/organic-food-mobile.jpg 1x, ./images/organic-food-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/organic-food-mobile.jpg" alt="girl with organic food" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -200,7 +417,30 @@
 						<li class="item">
 							<a href="#" class="link">
 								<div class="overlay">
-									<img src="./images/fresh-coffee.jpg" alt="cup of fresh coffee" width="360" height="300" />
+									<picture>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/fresh-coffee-desc.webp 1x, ./images/fresh-coffee-desc@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/fresh-coffee-desc.jpg 1x, ./images/fresh-coffee-desc@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/fresh-coffee-mobile.webp 1x, ./images/fresh-coffee-mobile@2x.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 320px)"
+											srcset="./images/fresh-coffee-mobile.jpg 1x, ./images/fresh-coffee-mobile@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<img src="./images/fresh-coffee-mobile.jpg" alt="cup of fresh coffee" />
+									</picture>
+
 									<p class="overlay-text">
 										14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
 										Fruit Ecommerce App · Cloud Storage App
@@ -280,5 +520,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
