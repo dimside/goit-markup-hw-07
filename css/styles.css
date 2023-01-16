@@ -280,8 +280,6 @@ img {
 }
 
 .team-list .item {
-	margin-bottom: 72px;
-
 	background-color: var(--primary-background-color);
 	width: 264px;
 
@@ -571,7 +569,8 @@ img {
 		scale: 0;
 
 		width: 100%;
-		height: 99vh;
+		height: 100vh;
+
 		padding-top: 80px;
 		padding-left: 40px;
 		padding-right: 40px;
@@ -590,6 +589,10 @@ img {
 		scale: 100%;
 		transform-origin: top right;
 		pointer-events: initial;
+	}
+
+	body.js-body-menu.is-open {
+		overflow: hidden;
 	}
 
 	.mobile-menu-close-button {
@@ -695,6 +698,18 @@ img {
 		background-color: transparent;
 	}
 
+	.advantage-list .title {
+		text-align: center;
+	}
+
+	.advantage-list .item:not(:last-child) {
+		margin-bottom: 72px;
+	}
+
+	.team-list .item:not(:last-child) {
+		margin-bottom: 72px;
+	}
+
 	.team-list .item {
 		margin-left: auto;
 		margin-right: auto;
@@ -751,10 +766,6 @@ img {
 		display: none;
 	}
 
-	.advantage-list .item {
-		margin-bottom: 72px;
-	}
-
 	.advantage-list .title {
 		font-weight: 700;
 		font-size: 36px;
@@ -783,6 +794,19 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.logo {
 		margin-right: 120px;
+	}
+
+	.auth-nav a[href^="mailto"] {
+		padding-top: 24px;
+		margin-bottom: 4px;
+	}
+
+	.auth-nav a[href^="tel"] {
+		padding-bottom: 10px;
+	}
+
+	.advantage-list {
+		row-gap: 72px;
 	}
 
 	.customers .container,
@@ -818,6 +842,7 @@ img {
 	}
 
 	.auth-nav .link {
+		display: block;
 		color: inherit;
 
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -989,7 +1014,6 @@ img {
 	}
 
 	.auth-nav .link {
-		display: block;
 		padding-top: 24px;
 		padding-bottom: 24px;
 	}
@@ -1035,9 +1059,12 @@ img {
 
 	/* WORK SECTION */
 
+	.work.section {
+		padding-bottom: 120px;
+	}
+
 	.work .container {
 		display: block;
-		padding-bottom: 120px;
 	}
 
 	.work-list {
